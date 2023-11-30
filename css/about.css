@@ -32,6 +32,35 @@ body {
     margin: 0 10%;
 }
 
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh 5vw;
+    /* position: fixed; */
+}
+
+.logoHead{
+    height: 1rem;
+}
+
+header nav{
+    display: flex;
+    list-style: none;
+    gap: 2.5vw;
+    color: #252422;       /*   #F9CDCD */
+    font-family: "Inter";
+    font-size: 0.8125rem;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+}
+
+.menuHead{
+    height: 0.5rem;
+}
+
 /* main */
 
 main h2 {
@@ -93,4 +122,112 @@ main p {
     position: absolute;
     left: 50%;
     z-index: 4;
+}
+
+/* footer */
+
+footer{
+    display: grid;
+    grid-template-columns:0.1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    ". logo collab ."
+    ". email footerMenu ."
+    ". . . ."
+    ". footerText footerText .";
+    background-color: #252422;       /*   white*/
+    color: #F4F4F4;                 /*   #252422*/
+    gap:2.5%;
+    padding-top: 5%;
+}
+footer a{
+    grid-area: logo;
+}
+
+footer img{
+    height: 1rem;
+}
+
+.collab{
+    grid-area: collab;
+    display: flex;
+    flex-direction: column;
+    color: #F4F4F4;                /*   #252422*/
+    font-family: "Inter";
+    font-size: 1.675rem;
+    font-weight: 700;
+    margin-bottom: 10%;
+}
+
+span{
+    text-decoration: underline;
+}
+
+.email{
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+    gap: 7.5%;
+}
+
+.email p{
+    color: #F4F4F4;                  /*   #252422*/
+    font-family: "Inter";
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+
+.email label{
+    color: #F4F4F4;                      /*   #252422*/
+    font-family: Arial;
+    font-size: 0.833125rem;
+    font-weight: 400;
+    line-height: 420.001%;
+}
+
+input[type=email]{
+    border: 0;
+    border-bottom: 0.625px solid #F4F4F4;        /*   #252422*/
+    background: #252422;
+}
+
+.footerMenu{
+    grid-area: footerMenu;
+    display: flex;
+    gap: 15%;
+}
+
+.social, .initatives, .offices{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.footerMenu h4{
+    color: #F4F4F4;                          /*   #252422*/
+    font-family: "Inter";
+    font-size: 1.075rem;
+    font-weight: 700;
+}
+
+.footerMenu ul{
+    list-style: none;
+    color: #F4F4F4;                      /*   #252422*/
+    font-family: "Inter";
+    font-size: 0.8375rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footerText{
+    grid-area: footerText;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #5E5E5E;
+    font-family: "Inter";
+    font-size: 0.625rem;
+    font-weight: 400;
 }
