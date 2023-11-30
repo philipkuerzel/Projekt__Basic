@@ -152,6 +152,27 @@ main p {
     z-index: 1;
 }
 
+/* main sectionThree */
+
+.sectionThree {
+    border-top: 0.1em solid var(--color-font-about);
+    height: 70vh;
+}
+
+.sectionThree img {
+    width: 25%;
+}
+.secline {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    font-size: 7px;
+    font-weight: lighter;
+    border-bottom: 0.1em solid var(--color-font-about);
+}
+
 /* footer */
 
 footer{
