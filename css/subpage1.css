@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'SctoGroteskA-Regular';
+    src: url('../fonts/SctoGroteskA-Regular.woff2');
+}
+
+@font-face {
+    font-family: 'SctoGroteskA-Medium';
+    src: url('../fonts/SctoGroteskA-Medium.woff2');
+}
+
+@font-face {
+    font-family: 'SctoGroteskA-Bold';
+    src: url('../fonts/SctoGroteskA-Bold.woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-background-sub1: #252422;
+    --color-font-sub1: #F9CDCD;
+}
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    color: var(--color-font-sub1);
+    background-color: var(--color-background-sub1);
+}
+
+main h2 {
+    font-family: 'SctoGroteskA-Bold';
+    font-size: 60px;
+}
+
+main p {
+    font-family: 'SctoGroteskA-Regular';
+    font-size: 18px;
+}
