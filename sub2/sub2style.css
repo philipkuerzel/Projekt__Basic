@@ -27,6 +27,11 @@ html {
     font-family: 'inter';
 }
 
+h2 {
+    font-size: 1.5rem;
+    font-family: 'inter-bold';
+}
+
                 /* Main */
                 /*  Section Contact Header */
 
@@ -186,9 +191,43 @@ h1 {
 
                     /* Section Follow */
 
-.follow {
+.endOfMain {
     display: flex;
-    padding: 50px 90px;
+    padding: 3vw 6vw;
     flex-direction: column;
     justify-content: center;
+}
+
+.follow {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.social p {
+    font-size: 1.4rem;
+    font-family: 'inter-bold';
+}
+
+.social a {
+    color: #252422;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+form input {
+    padding: 13.682px 1.792px 18.682px 1.992px;
+    border: none;
+    border-bottom: 0.625px solid #252422;
+    margin-top: 2vh;
+    width: 30vw;
+}
+
+::placeholder {
+    font-size: 0.83rem;
 }
