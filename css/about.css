@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('../fonts/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('../fonts/Inter-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-background-about: #252422;
+    --color-font-about: #F9CDCD;
+}
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    color: var(--color-font-about);
+    background-color: var(--color-background-about);
+    margin: 0 10%;
+}
+
+/* main */
+
+main h2 {
+    font-family: 'Inter-Bold';
+    font-size: 60px;
+}
+
+main h3 {
+    font-family: 'Inter-Bold';
+    font-size: 40px;
+}
+
+main h4 {
+    font-family: 'Inter-Bold';
+    font-size: 30px;
+}
+
+main p {
+    font-family: 'Inter-Regular';
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+/* main sectionOne */
+
+
+.sectionOne {
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10%;
+}
+
+.sectionOne h2 {
+    width: 30%;
+}
+
+.sectionOne div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 3em;
+}
+
+/* main sectionTwo */
+
+.sectionTwo {
+    border-top: 0.1em solid var(--color-font-about);
+    position: relative;
+    height: 70vh;
+}
+
+.sectionTwo img {
+    width: 25%;
+}
+
+.pic1 {
+    position: absolute;
+    left: 50%;
+    z-index: 4;
+}
