@@ -1,16 +1,11 @@
 @font-face {
-    font-family: 'SctoGroteskA-Regular';
-    src: url('../fonts/SctoGroteskA-Regular.woff2');
+    font-family: 'Inter-Regular';
+    src: url('../fonts/Inter-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'SctoGroteskA-Medium';
-    src: url('../fonts/SctoGroteskA-Medium.woff2');
-}
-
-@font-face {
-    font-family: 'SctoGroteskA-Bold';
-    src: url('../fonts/SctoGroteskA-Bold.woff2');
+    font-family: 'Inter-Bold';
+    src: url('../fonts/Inter-Bold.ttf');
 }
 
 * {
@@ -20,8 +15,8 @@
 }
 
 :root {
-    --color-background-sub1: #252422;
-    --color-font-sub1: #F9CDCD;
+    --color-background-about: #252422;
+    --color-font-about: #F9CDCD;
 }
 
 
@@ -32,16 +27,16 @@ html {
 body {
     width: 100vw;
     height: auto;
-    color: var(--color-font-sub1);
-    background-color: var(--color-background-sub1);
+    color: var(--color-font-about);
+    background-color: var(--color-background-about);
 }
 
 main h2 {
-    font-family: 'SctoGroteskA-Bold';
+    font-family: 'Inter-Bold';
     font-size: 60px;
 }
 
 main p {
-    font-family: 'SctoGroteskA-Regular';
+    font-family: 'Inter-Regular';
     font-size: 18px;
 }
