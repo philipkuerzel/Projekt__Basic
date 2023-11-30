@@ -74,6 +74,7 @@ main p {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    padding-bottom: 3em;
 }
 
 /* main sectionTwo */
@@ -82,5 +83,14 @@ main p {
     border-top: 0.1em solid var(--color-font-about);
     position: relative;
     height: 70vh;
+}
 
+.sectionTwo img {
+    width: 25%;
+}
+
+.pic1 {
+    position: absolute;
+    left: 50%;
+    z-index: 4;
 }
