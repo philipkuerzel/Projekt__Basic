@@ -17,6 +17,7 @@
 :root {
     --color-background-about: #252422;
     --color-font-about: #F9CDCD;
+    --color-border: #F4F4F4;
 }
 
 html {
@@ -28,7 +29,6 @@ body {
     height: auto;
     color: var(--color-font-about);
     background-color: var(--color-background-about);
-    margin: 0 10%;
 }
 
 /* header */
@@ -62,6 +62,10 @@ header nav{
 
 /* main */
 
+main {
+    margin: 5vh 5vw;
+}
+
 main h2 {
     font-family: 'Inter-Bold';
     font-size: 60px;
@@ -85,12 +89,11 @@ main p {
 
 /* main sectionOne */
 
-
 .sectionOne {
     height: 70vh;
     display: flex;
-    justify-content: space-evenly;
-    gap: 10%;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .sectionOne h2 {
@@ -102,14 +105,14 @@ main p {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding-bottom: 3em;
+    padding: 3rem 0;
 }
 
 /* main sectionTwo */
 
 .sectionTwo {
     border-top: 0.1em solid var(--color-font-about);
-    height: 70vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -120,34 +123,39 @@ main p {
     bottom: 50%;
 }
 
+.sectionTwo p {
+    font-size: 10px;
+}
+
 .sectionTwo img {
-    width: 30%;
+    width: 16rem;
 }
 
 .pic1 {
     position: absolute;
+    top: 20%;
     left: 50%;
     z-index: 4;
 }
 
 .pic2 {
     position: absolute;
-    left: 30%;
-    top: 50%;
+    top: 10%;
+    left: 40%;
     z-index: 3;
 }
 
 .pic3 {
     position: absolute;
-    left: 70%;
-    top: 70%;
+    top: 15%;
+    left: 60%;
     z-index: 2;
 }
 
 .pic4 {
     position: absolute;
-    left: 60%;
-    top: 90%;
+    top: 30%;
+    left: 65%;
     z-index: 1;
 }
 
@@ -155,18 +163,18 @@ main p {
 
 .sectionThree {
     border-top: 0.1em solid var(--color-font-about);
-    height: 70vh;
 }
 
 .sectionThree img {
     width: 25%;
+    padding-top: 2rem;
 }
 .secline {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     font-size: 7px;
     font-weight: lighter;
     border-bottom: 0.1em solid var(--color-font-about);
@@ -175,10 +183,12 @@ main p {
 /* main sectionFour */
 
 .sectionFour, .sectionFive {
-    height: min-content;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .col {
@@ -192,7 +202,47 @@ main p {
 
 .col h3, h4, p {
     font-weight: lighter;
-    padding-top: 1em;
+    padding-top: 0.5rem;
+}
+
+/* main sectionSix */
+
+.sectionSix {
+    display: flex;
+
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.col2 {
+    font-size: 1rem;
+}
+
+.sectionSix button {
+    padding: 1rem 4rem;
+    border: 0.1rem solid var(--color-border);
+    border-radius: 1rem;
+    background-color: var(--color-background-about);
+}
+
+/* main sectionSeven */
+
+.sectionSeven {
+    
+}
+
+.sectionSeven p {
+    font-family: 'Inter-Bold';
+    font-size: 5rem;
+}
+
+.sectionSeven span {
+    font-family: 'Inter-Regular';
+    font-size: 1rem;
+    font-weight: lighter;
 }
 
 
