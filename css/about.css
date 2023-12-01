@@ -17,11 +17,11 @@
 :root {
     --color-background-about: #252422;
     --color-font-about: #F9CDCD;
+    --color-border: #F4F4F4;
 }
 
-
 html {
-    font-size: 10px;
+    font-size: 1rem;
 }
 
 body {
@@ -29,10 +29,42 @@ body {
     height: auto;
     color: var(--color-font-about);
     background-color: var(--color-background-about);
-    margin: 0 10%;
+}
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh 5vw;
+    /* position: fixed; */
+}
+
+.logoHead{
+    height: 1rem;
+}
+
+header nav{
+    display: flex;
+    list-style: none;
+    gap: 2.5vw;
+    color: #F9CDCD;
+    font-family: 'Inter-Regular';
+    font-size: 0.8125rem;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+}
+
+.menuHead{
+    height: 0.5rem;
 }
 
 /* main */
+
+main {
+    margin: 5vh 5vw;
+}
 
 main h2 {
     font-family: 'Inter-Bold';
@@ -57,12 +89,11 @@ main p {
 
 /* main sectionOne */
 
-
 .sectionOne {
     height: 70vh;
     display: flex;
-    justify-content: space-evenly;
-    gap: 10%;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .sectionOne h2 {
@@ -74,23 +105,251 @@ main p {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding-bottom: 3em;
+    padding: 3rem 0;
 }
 
 /* main sectionTwo */
 
 .sectionTwo {
     border-top: 0.1em solid var(--color-font-about);
+    height: 100vh;
     position: relative;
-    height: 70vh;
+}
+
+.sectionTwo div {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+}
+
+.sectionTwo p {
+    font-size: 10px;
 }
 
 .sectionTwo img {
-    width: 25%;
+    width: 16rem;
 }
 
 .pic1 {
     position: absolute;
+    top: 20%;
     left: 50%;
     z-index: 4;
+}
+
+.pic2 {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    z-index: 3;
+}
+
+.pic3 {
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    z-index: 2;
+}
+
+.pic4 {
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    z-index: 1;
+}
+
+/* main sectionThree */
+
+.sectionThree {
+    border-top: 0.1em solid var(--color-font-about);
+}
+
+.sectionThree img {
+    width: 25%;
+    padding-top: 2rem;
+}
+.secline {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 7px;
+    font-weight: lighter;
+    border-bottom: 0.1em solid var(--color-font-about);
+}
+
+/* main sectionFour */
+
+.sectionFour, .sectionFive, .sectionSix {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.col {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20%;
+}
+
+.col h3, h4, p {
+    font-weight: lighter;
+    padding-top: 0.5rem;
+}
+
+/* main sectionSix */
+
+.sectionSix {
+    display: flex;
+}
+
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.col2 p {
+    font-size: 1rem;
+}
+
+.sectionSix button {
+    padding: 1rem 4rem;
+    border: 0.1rem solid var(--color-border);
+    border-radius: 1rem;
+    background-color: var(--color-background-about);
+}
+
+/* main sectionSeven */
+
+.sectionSeven {
+    
+}
+
+.sectionSeven p {
+    font-family: 'Inter-Bold';
+    font-size: 5rem;
+}
+
+.sectionSeven span {
+    font-family: 'Inter-Regular';
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+
+/* footer */
+
+footer{
+    display: grid;
+    grid-template-columns:0.1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    ". logo collab ."
+    ". email footerMenu ."
+    ". . . ."
+    ". footerText footerText .";
+    background-color: white;
+    color: #252422;
+    gap:2.5%;
+    padding-top: 5%;
+}
+footer a{
+    grid-area: logo;
+}
+
+footer img{
+    height: 1rem;
+}
+
+.collab{
+    grid-area: collab;
+    display: flex;
+    flex-direction: column;
+    color: #252422;
+    font-family: 'Inter-Regular';
+    font-size: 1.675rem;
+    font-weight: 700;
+    margin-bottom: 10%;
+}
+
+span{
+    text-decoration: underline;
+}
+
+.email{
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+    gap: 7.5%;
+}
+
+.email p{
+    color: #252422;
+    font-family: 'Inter-Regular';
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+
+.email label{
+    color: #252422;
+    font-family: Arial;
+    font-size: 0.833125rem;
+    font-weight: 400;
+    line-height: 420.001%;
+}
+
+input[type=email]{
+    border: 0;
+    border-bottom: 0.625px solid #252422;
+    background: #252422;
+}
+
+.footerMenu{
+    grid-area: footerMenu;
+    display: flex;
+    gap: 15%;
+}
+
+.social, .initatives, .offices{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.footerMenu h4{
+    color: #252422;
+    font-family: 'Inter-Regular';
+    font-size: 1.075rem;
+    font-weight: 700;
+}
+
+.footerMenu ul{
+    list-style: none;
+    color: #252422;
+    font-family: 'Inter-Regular';
+    font-size: 0.8375rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footerText{
+    grid-area: footerText;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #5E5E5E;
+    font-family: 'Inter-Regular';
+    font-size: 0.625rem;
+    font-weight: 400;
 }
