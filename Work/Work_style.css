@@ -104,6 +104,7 @@ header nav a:not(:nth-of-type(1)){
 .headerWork p {
     width: 18vw;
     margin-bottom: 2vh; 
+    margin-right: 0 auto;
 }
 
 .work {
