@@ -57,6 +57,10 @@ header nav{
     text-transform: uppercase;
 }
 
+header nav a {
+    color: #252422;
+}
+
 header nav a:not(:nth-of-type(5)){
     text-decoration: none;
 }
@@ -101,6 +105,7 @@ h1 {
     margin-bottom: 15vh;
 }
                 /* ? Contact Grid */
+
 .contactGrid {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -253,17 +258,18 @@ h1 {
     opacity: 0.9;
 }
 
-.stay {
+input[type=email] {
     padding: 13.682px 1.792px 18.682px 1.992px;
     border: none;
     border-bottom: 0.625px solid #252422;
     margin-top: 2vh;
     width: 30vw;
-    background-color: white;
+    background: white;
 }
 
 ::placeholder {
     font-size: 0.83rem;
+    font-family: Arial;
 }
 
 /* ------------------footer------------------- */
@@ -327,11 +333,11 @@ span{
     line-height: 420.001%;
 }
 
-/* input[type=email]{
+footer input[type=email] {
     border: 0;
     border-bottom: 0.625px solid #F4F4F4;
     background: #252422;
-} */
+}
 
 .footerMenu{
     grid-area: footerMenu;
