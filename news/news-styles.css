@@ -49,12 +49,13 @@ header nav{
     display: flex;
     color: black;
     font-family:" Inter";
-    font-size: 1.8rem;
+    font-size: 5rem;
     font-weight: 700;
     margin-bottom: 5%;
     padding:0 5%;
     justify-content: space-between;
 }
+
 
 .artikel{
     display: grid;
@@ -66,6 +67,7 @@ header nav{
     ". image p . . .";
     border-top: 0.625px solid #252422;
     padding-top: 2%;
+    margin-bottom: 1%;
 }
 
 .newsimg{
@@ -82,9 +84,6 @@ header nav{
     font-weight: 700;
 }
 
-/* .artikelTitel h3:first-of-type{
-    border-bottom: 0.625px solid #F9CDCD;
-} */
 .arrow{
     grid-area: arrow;
 }
