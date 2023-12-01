@@ -29,12 +29,16 @@ header nav{
     display: flex;
     list-style: none;
     gap: 2.5vw;
+}
+
+header nav a {
     color: #252422;       /*   #F9CDCD */
     font-family: "Inter";
     font-size: 0.8125rem;
     font-weight: 400;
     letter-spacing: -0.3px;
-    text-transform: uppercase;
+    text-transform: uppercase;  
+    text-decoration: none;
 }
 
 .menuHead{
@@ -45,6 +49,7 @@ header nav{
 /* ------------------main------------------- */
 
 
+/* ------Video Section------ */
 .videoSection{
     display: flex;
     flex-direction: column;
@@ -81,6 +86,7 @@ header nav{
     width: 90vw;
 }
 
+/* ------Work Section------ */
 .workSection{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -131,13 +137,19 @@ header nav{
     padding: 2.5% 0;
 }
 
+.seeWork:hover{
+    color: white;
+    background-color: #252422;
+}
 
 
-
+/* ------Engagement Section------ */
 .engagementSection{
     display: flex;
     flex-direction: column;
     margin-bottom: 5%;
+    width: 90%;
+    margin: auto;
 }
 
 .engagementTitel{
@@ -181,6 +193,7 @@ header nav{
     margin-top: 7.5%;
 }
 
+/* ------About Us Section------ */
 .aboutUsSection{
     display: flex;
     padding: 5% 0;
@@ -208,6 +221,7 @@ header nav{
     border-radius: 25px;
     border: 1px solid #F9CDCD;
     padding: 2.5vh 5vw;
+    text-decoration: none;
 }
 
 .aboutLinks a:hover{
@@ -234,6 +248,7 @@ header nav{
     line-height: 100%;
 }
 
+/* ------News Section------ */
 .newsSection{
     padding-bottom: 5%;
     background-color: #252422;
@@ -293,6 +308,7 @@ header nav{
 
 /* ------------------footer------------------- */
 
+
 footer{
     display: grid;
     grid-template-columns:0.1fr 1fr 1fr 0.1fr;
@@ -307,6 +323,8 @@ footer{
     gap:2.5%;
     padding-top: 5%;
 }
+
+/* ------Logo------ */
 footer a{
     grid-area: logo;
 }
@@ -315,6 +333,7 @@ footer img{
     height: 1rem;
 }
 
+/* ------Collabtext------ */
 .collab{
     grid-area: collab;
     display: flex;
@@ -330,6 +349,7 @@ span{
     text-decoration: underline;
 }
 
+/* ------Email------ */
 .email{
     grid-area: email;
     display: flex;
@@ -358,6 +378,8 @@ input[type=email]{
     background: #252422;
 }
 
+
+/* ------Footer Menü------ */
 .footerMenu{
     grid-area: footerMenu;
     display: flex;
@@ -387,6 +409,8 @@ input[type=email]{
     flex-direction: column;
     gap: 5px;
 }
+
+/* ------Copyrighttexte------ */
 
 .footerText{
     grid-area: footerText;
