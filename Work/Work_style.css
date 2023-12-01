@@ -84,6 +84,7 @@ header nav a:not(:nth-of-type(1)){
 
 .headerWork {
     padding: 3vw 6vw 0px 6vw;
+    margin-bottom: 10vh;
 }
 
 .headerWork div {
@@ -108,11 +109,71 @@ header nav a:not(:nth-of-type(1)){
 
 .info {
     display: flex;
+    justify-content: space-between;
+    border-top: 0.625px solid #252422;
+    padding-top: 2vh;
+    margin-bottom: 4vh;
+    gap: 1vw;
 }
 
 .headline {
     display: flex;
     flex-direction: column;
+    border-right: 0.625px solid #252422;
+    gap: 30vh;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+.center h2 {
+    margin-right: 15vw;
+}
+
+.center p {
+    font-size: 0.938rem;
+    margin-right: 2vw;
+    margin-top: 3vh;
+
+}
+
+button {
+    font-size: 0.625rem;
+    background-color: white;
+    border: 1px solid #252422 ;
+    border-radius: 15px;
+    padding: 0.5vh;
+    width: 5vw;
+    margin-top: 3vh;
+}
+
+button a {
+    text-decoration: none;
+    color: #252422;
+}
+
+button:hover{
+    background-color: #252422;
+}
+
+button:hover a {
+    color: white;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+
+}
+
+.img p {
+    font-size: 0.813rem;
+    width: 28vh;
+    text-transform: uppercase;
 }
                 /* Footer */
 
