@@ -187,17 +187,16 @@ main p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .col {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20%;
+    gap: 3rem;
 }
 
 .col h3, h4, p {
@@ -205,20 +204,27 @@ main p {
     padding-top: 0.5rem;
 }
 
+.col1 {
+    width: 40vw;
+}
+
+.col2 {
+    width: 30vw;
+}
+
+.col3 {
+    width: 30vw;
+}
+
 /* main sectionSix */
 
 .sectionSix {
     display: flex;
+    padding-bottom: 3rem;
 }
 
-
-.col2 {
-    display: flex;
-    flex-direction: column;
-}
-
-.col2 p {
-    font-size: 1rem;
+.xs {
+    font-size: 0.5rem;
 }
 
 .sectionSix button {
