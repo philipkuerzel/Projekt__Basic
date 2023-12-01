@@ -148,6 +148,8 @@ header nav a {
     display: flex;
     flex-direction: column;
     margin-bottom: 5%;
+    width: 90%;
+    margin: auto;
 }
 
 .engagementTitel{
