@@ -22,6 +22,10 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+}
+
 html {
     font-size: 16px;
     font-family: "inter";
@@ -90,15 +94,16 @@ header nav a:not(:nth-of-type(1)){
 .headerWork div {
     display: inline-flex;
     height: 397.5px;
-    padding: 2vw 80vw 1vw 0vw;
+    width: 20vw;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 15vh;
 }
 
 .headerWork p {
-    padding-left: 70vw;
-    margin-top: 20vh;
+    width: 18vw;
+    margin-bottom: 2vh; 
 }
 
 .work {
@@ -114,6 +119,10 @@ header nav a:not(:nth-of-type(1)){
     padding-top: 2vh;
     margin-bottom: 4vh;
     gap: 1vw;
+    width: 100%;
+}
+.headline, .img {
+    width: 33%;
 }
 
 .headline {
@@ -126,7 +135,6 @@ header nav a:not(:nth-of-type(1)){
 .center {
     display: flex;
     flex-direction: column;
-    width: 25vw;
 }
 
 .center h2 {
@@ -146,7 +154,7 @@ button {
     border: 1px solid #252422 ;
     border-radius: 15px;
     padding: 0.5vh;
-    width: 5vw;
+    width: 80px;
     margin-top: 3vh;
 }
 
@@ -167,7 +175,6 @@ button:hover a {
     display: flex;
     flex-direction: column;
     gap: 4vh;
-
 }
 
 .img p {
