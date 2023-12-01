@@ -27,12 +27,16 @@ header nav{
     display: flex;
     list-style: none;
     gap: 2.5vw;
+}
+
+header nav a {
     color: #252422;       /*   #F9CDCD */
     font-family: "Inter";
     font-size: 0.8125rem;
     font-weight: 400;
     letter-spacing: -0.3px;
-    text-transform: uppercase;
+    text-transform: uppercase;  
+    text-decoration: none;
 }
 
 .menuHead{
