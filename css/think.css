@@ -103,6 +103,8 @@ main p {
     display: flex;
     justify-content: space-around;
     gap: 5rem;
+    border-bottom: 0.1rem solid var(--color-font-about);
+    padding: 3rem 0;
 }
 
 /* main sectionThree */
@@ -115,6 +117,14 @@ main p {
     margin-top: 1rem;
 }
 
+.col1 img {
+    width: 25rem;
+}
+
+.col3 img {
+    width: 2rem;
+}
+
 .col {
     width: 100%;
     display: flex;
@@ -122,6 +132,8 @@ main p {
     justify-content: space-between;
     align-items: flex-start;
     gap: 3rem;
+    border-bottom: 0.1rem solid var(--color-font-about);
+    padding: 1rem 0;
 }
 
 .col h3, h4, p {
@@ -130,15 +142,19 @@ main p {
 }
 
 .col1 {
-    width: 40vw;
+    width: 30vw;
 }
 
 .col2 {
-    width: 30vw;
+    width: 60vw;
 }
 
 .col3 {
-    width: 30vw;
+    width: 10vw;
+}
+
+article:nth-of-type(6) div:nth-of-type(3) {
+    border: none;
 }
 
 /* footer */
