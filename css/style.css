@@ -72,7 +72,12 @@ header nav{
 }
 
 .video{
+    display: flex;
+    align-self: center;
+}
 
+.video video{
+    width: 90vw;
 }
 
 .workSection{
@@ -126,9 +131,12 @@ header nav{
 }
 
 
+
+
 .engagementSection{
     display: flex;
     flex-direction: column;
+    margin-bottom: 5%;
 }
 
 .engagementTitel{
@@ -138,16 +146,18 @@ header nav{
     font-family: "Inter";
     font-size: 1.3rem;
     font-weight: 700;
+    margin: 10% 0;
     }
 
 
 .engagementScrollbox{
     display: flex;
+    overflow-x: auto;
 }
 .scrollbox{
     display: flex;
     flex-direction: column;
-    width: 25vw;
+    min-width: 25vw;
 }
 
 .scrollBox img{
@@ -158,6 +168,7 @@ header nav{
     height: 2px;
     width: 10%;
     background: #252422;
+    margin: 5% 0 15%;
 }
 
 .markentext{
@@ -166,6 +177,116 @@ header nav{
     font-size: 1rem;
     font-weight: 400;
     border-top: 0.625px solid #252422;
+    margin-top: 7.5%;
+}
+
+.aboutUsSection{
+    display: flex;
+    padding: 5% 0;
+    background-color: #252422;
+}
+
+.aboutLinks{
+    width: 60%;
+    padding-left: 5%;
+}
+
+.aboutLinks p{
+    color: #F9CDCD;
+    font-family: "Inter";
+    font-weight: 400;
+    margin-bottom: 15%;
+}
+
+.aboutLinks a{
+    color: #F9CDCD;
+    font-family: "Inter";
+    font-size: 0.625rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: 1px solid #F9CDCD;
+    padding: 2.5vh 5vw;
+}
+
+.aboutLinks a:hover{
+    color: #252422;
+    background-color: #F9CDCD;
+}
+
+.aboutRechts{
+    width: 40%;
+}
+
+.aboutRechts video{
+    height: 80vh;
+}
+
+.aboutTitel{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    color: #F9CDCD;
+    font-family: "Inter";
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.newsSection{
+    padding-bottom: 5%;
+    background-color: #252422;
+}
+
+.newsTitel{
+    display: flex;
+    flex-direction: column;
+    color: #F9CDCD;
+    font-family:" Inter";
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 5%;
+    padding-left: 5%;
+}
+
+.artikel{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". image titel . arrow ."
+    ". image . . . ."
+    ". image p . . .";
+}
+
+.newsimg{
+    grid-area: image;
+    width: 15vw;
+    height: 15vw;
+}
+
+.artikelTitel{
+    grid-area: titel;
+    color: #F9CDCD;
+    font-family: "Inter";
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.artikelTitel h3:first-of-type{
+    border-bottom: 0.625px solid #F9CDCD;
+}
+.arrow{
+    grid-area: arrow;
+}
+
+.artikel p{
+    grid-area: p;
+    color: #F9CDCD;
+    font-family: "Inter";
+    font-size: 0.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 
