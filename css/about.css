@@ -133,29 +133,29 @@ main p {
 
 .pic1 {
     position: absolute;
-    top: 20%;
-    left: 50%;
+    top: 35%;
+    left: 35%;
     z-index: 4;
 }
 
 .pic2 {
     position: absolute;
     top: 10%;
-    left: 40%;
+    left: 30%;
     z-index: 3;
 }
 
 .pic3 {
     position: absolute;
     top: 15%;
-    left: 60%;
+    left: 40%;
     z-index: 2;
 }
 
 .pic4 {
     position: absolute;
-    top: 30%;
-    left: 65%;
+    top: 40%;
+    left: 50%;
     z-index: 1;
 }
 

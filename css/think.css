@@ -103,7 +103,6 @@ main p {
     display: flex;
     justify-content: space-around;
     gap: 5rem;
-    border-bottom: 0.1rem solid var(--color-font-about);
     padding: 3rem 0;
 }
 
@@ -115,6 +114,10 @@ main p {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 1rem;
+}
+
+.sectionThree:nth-last-of-type(1) {
+    border-top: 0.1rem solid var(--color-font-about);
 }
 
 .col1 img {
@@ -150,7 +153,7 @@ main p {
 }
 
 .col3 {
-    width: 10vw;
+    width: 3vw;
 }
 
 article:nth-of-type(6) div:nth-of-type(3) {
