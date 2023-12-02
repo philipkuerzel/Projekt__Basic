@@ -199,9 +199,9 @@ main p {
     gap: 3rem;
 }
 
-.col h3, h4, p {
+.col h4, h3, p {
     font-weight: lighter;
-    padding-top: 0.5rem;
+    padding-top: 0.25rem;
 }
 
 .col1 {
@@ -209,11 +209,23 @@ main p {
 }
 
 .col2 {
-    width: 30vw;
+    width: 25vw;
 }
 
 .col3 {
-    width: 30vw;
+    width: 25vw;
+}
+
+.row {
+    height: 13rem;
+}
+
+.sectionFive .row {
+    height: 17rem;
+}
+
+.sectionFive p {
+    line-height: 1.5rem;
 }
 
 /* main sectionSix */
@@ -225,6 +237,7 @@ main p {
 
 .xs {
     font-size: 0.5rem;
+    padding: 1rem 0;
 }
 
 .sectionSix button {
@@ -232,6 +245,7 @@ main p {
     border: 0.1rem solid var(--color-border);
     border-radius: 1rem;
     background-color: var(--color-background-about);
+    margin-bottom: 1rem;
 }
 
 /* main sectionSeven */
@@ -241,7 +255,7 @@ main p {
     font-size: 5rem;
 }
 
-.sectionSeven span {
+.sectionSeven sup {
     font-family: 'Inter-Regular';
     font-size: 1rem;
     font-weight: lighter;
