@@ -157,6 +157,10 @@ article:nth-of-type(6) div:nth-of-type(3) {
     border: none;
 }
 
+.col2 p {
+    padding-top: 5rem;
+}
+
 /* footer */
 
 footer{
